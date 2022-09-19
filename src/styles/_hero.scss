@@ -1,0 +1,42 @@
+.hero {
+    .container {
+        @apply mt-4 pt-16 sm:pt-20 md:pt-16;  
+        min-height: calc(100vh - 80px);
+
+        .text {
+            @apply flex flex-col items-center gap-10;
+        
+            .hero-title {
+                @apply text-3xl md:text-[40px] uppercase text-center leading-10; 
+                @apply flex flex-col gap-2 md:gap-4; 
+            }
+        }
+        .bg {
+            @apply w-full grid gap-5 place-items-center mt-20 md:mt-14;
+            grid-template-areas: 
+            "programming uiux app";
+            @media screen and (max-width: 726px) {
+                grid-template-areas: 
+                "programming app" 
+                "uiux uiux";
+            }
+            
+            .programming {
+                grid-area: programming;
+            }
+
+            .app {
+                grid-area: app;
+            }
+            
+            .uiux {
+                @apply w-40 sm:w-44 md:w-64;
+                grid-area: uiux;
+            }
+
+            img {
+                @apply w-32 sm:w-36 md:w-52;
+            }
+        }
+    }
+}
