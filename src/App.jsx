@@ -3,6 +3,9 @@ import 'animate.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
+import WebTechs from './components/WebTechs';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
             <Hero />
         </header>
         <About />
+        <Skills />
+        <WebTechs />
+        <Projects />
     </div>
   );
 }

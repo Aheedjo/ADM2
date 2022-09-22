@@ -1,0 +1,38 @@
+.projects {
+    
+    .projects-grid {
+        @apply mt-5 md:mt-7;
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5;
+
+        .project {
+            @apply bg-accent shadow-sm rounded;
+
+            img {
+                @apply rounded-t
+            }
+            
+            .info-cont {
+                @apply p-3 py-5 md:p-5;
+    
+                .title {
+                    @apply mb-1 text-lg;
+                }
+    
+                .text {
+                    @apply text-sm;
+                }
+    
+                .btn-cont {
+                    @apply flex gap-3 mt-8;
+    
+                    a {
+                        @apply text-xs border-solid border-primary border-[1px] p-3 py-1 rounded-sm w-28 text-center transition-all;
+                        &:hover {
+                            @apply bg-primary text-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
