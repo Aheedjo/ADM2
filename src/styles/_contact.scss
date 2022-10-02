@@ -1,0 +1,36 @@
+.contact {
+    @apply lg:grid gap-12;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 60% 40%;
+    }
+
+    form {
+        @apply mt-5;
+        
+        input, textarea {
+            @apply bg-secondary border-b p-2 border-primary outline-none w-full;
+        }
+
+        div {
+            .error-msg {
+                @apply text-sm text-primary mt-1 pl-2;
+            }
+        }
+
+        .grid-input {
+            @apply grid grid-cols-1 md:grid-cols-2 gap-5 mb-5;
+        }
+
+        .btn {
+            @apply py-2 md:py-3 mt-5;
+        }
+    }
+    
+    .right {
+        @apply mt-10 lg:mt-0;
+
+        .one-liner {
+            @apply flex items-center gap-3 mb-2;
+        }
+    }
+}   

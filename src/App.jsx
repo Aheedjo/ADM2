@@ -1,24 +1,23 @@
 import './styles/App.scss';
 import 'animate.css';
+import { Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import WebTechs from './components/WebTechs';
-import Projects from './components/Projects';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import About from './pages/About';
+import HireMePage from './pages/HireMePage';
 
 function App() {
   return (
-    <div className="App">
-        <header>
-            <Navbar />
-            <Hero />
-        </header>
-        <About />
-        <Skills />
-        <WebTechs />
-        <Projects />
-    </div>
+    <main className="App">
+        <Navbar />        
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/hire-me' element={<HireMePage />} />
+        </Routes>
+        <Footer />
+    </main>
   );
 }
 

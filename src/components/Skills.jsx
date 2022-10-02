@@ -6,9 +6,9 @@ const Services = () => {
             <h2 className="title"><span className="line"></span>Skills</h2>
             <div className="skills-grid">
                 {
-                    skillss.map(skill => {
+                    skillss.map((skill, i) => {
                         return (
-                            <div className="skill">
+                            <div key={i} className="skill">
                                 <div className="icon"></div>
                                 <h3 className="title">{skill.title}</h3>
                                 <p className="info">{skill.info}</p>

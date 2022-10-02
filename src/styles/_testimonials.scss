@@ -1,0 +1,43 @@
+.testimonials {
+
+    .slide {
+        @apply mt-5 md:mt-7;
+        @apply flex gap-7 w-full overflow-x-auto pb-5;
+
+        .testimonial {
+            @apply min-w-full md:min-w-[500px];
+
+            .icon {
+                @apply mb-0;
+            }
+
+            .user-info {
+                @apply flex items-center gap-3 mb-3;
+
+                .name {
+                    @apply uppercase;
+                }
+            }
+
+            .header {
+                @apply uppercase mb-2;
+            }
+
+            .text {
+                @apply text-sm;
+            }
+        }
+    }
+
+    .slide::-webkit-scrollbar {
+        @apply h-[5px] max-w-[90%] mx-auto;
+    }
+    
+    .slide::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .slide::-webkit-scrollbar-thumb {
+        @apply bg-primary;
+    }
+}

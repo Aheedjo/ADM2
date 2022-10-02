@@ -1,18 +1,41 @@
 @import './variables';
 
+.logo {
+    @apply w-[70px];
+}
+
 .nav {
-    @apply shadow-md fixed top-0 w-full;
+    @apply shadow-md bg-secondary fixed top-0 w-full z-50;
     .container {
         @apply flex items-center justify-between py-4 relative;
-    
-        .logo {
-            @apply w-[70px];
+
+        .desktop {
+            @apply hidden md:block;
+            .btn-desktop {
+                @apply flex items-center gap-3; 
+            }
+        }
+
+        button {
+            @apply text-sm uppercase rounded-md py-3 md:py-2 px-5;                
+            @apply border-[1px] border-solid border-secondary md:border-primary bg-primary text-secondary transition-all;                
+            @apply flex items-center gap-3;
+        
+            &:hover {
+                @apply border-primary md:bg-opacity-0 text-primary;                
+            }
         }
         
         nav {
             .navigation-mobile {
                 @apply hidden flex-col gap-10 z-50;
                 @apply absolute text-secondary bg-[#2B2B2B] py-8 px-5 left-0 bottom-0 w-full translate-y-[98%] opacity-0 rounded-md transition-all ease-in-out shadow-md;
+                button {
+                    @apply w-full text-center justify-center;
+                    &:hover {
+                        @apply border-secondary text-secondary;                
+                    }
+                }
             }
             
             .navigation-desktop {
@@ -32,16 +55,12 @@
                         @apply bottom-[-5px] opacity-100;
                     }
                 }
+                
+                .active {
+                    @apply bottom-[-5px] opacity-100;
+                }
             } 
         
-            button {
-                @apply text-sm uppercase rounded-md py-3 md:py-2 px-5 w-full;                
-                @apply border-[1px] border-solid border-secondary md:border-primary transition-all;                
-                
-                &:hover {
-                    @apply border-primary md:border-secondary bg-secondary md:bg-primary text-primary md:text-secondary;                
-                }
-            }
             
             .active {
                 @apply translate-y-[105%] md:translate-y-[0] opacity-100 flex md:hidden;

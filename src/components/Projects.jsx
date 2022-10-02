@@ -6,9 +6,9 @@ const Projects = () => {
         <h2 className="title"><span className="line"></span>Projects</h2>
         <div className="projects-grid">
             {
-                projects.map(project => {
+                projects.map((project, i) => {
                     return (
-                        <article className='project'>
+                        <article key={i} className='project'>
                             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="" />               
                             <div className="info-cont">
                                 <div className="info">

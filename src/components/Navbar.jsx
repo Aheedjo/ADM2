@@ -1,29 +1,32 @@
 import React from 'react'
 import { useState } from 'react'
 import logo from '../assets/logo.svg'
+import { BsFillArrowRightCircleFill } from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [show, setShow] = useState(false);
-    // const [active, setActive] = useState("Home");
     
     return (
         <header className='nav'>
             <div className="container">
-                <a href="/"><img src={logo} alt="logo" className="logo"/></a>
+                <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
                 <nav>
                     <ul className={show ? "mobile navigation-mobile active" : "mobile navigation-mobile"}>
-                        <li className="navigation-item"><a href="/">Home</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">projects</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">about</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">r&Eacute;sum&Eacute;</a><span className="line"></span></li>
-                        <li><button>hire me</button></li>
+                        <li className="navigation-item">
+                            <Link to="/">Home</Link>
+                            <span className="line"></span>
+                        </li>
+                        <li className="navigation-item"><Link to="/projects">projects</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link to="/about">about</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link to="/resume">r&Eacute;sum&Eacute;</Link><span className="line"></span></li>
+                        <Link to="hire-me"><button>hire me <BsFillArrowRightCircleFill className='col' /></button></Link>
                     </ul>
                     <ul className="navigation-desktop">
-                        <li className="navigation-item"><a href="/">Home</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">projects</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">about</a><span className="line"></span></li>
-                        <li className="navigation-item"><a href="/">r&Eacute;sum&Eacute;</a><span className="line"></span></li>
-                        <li><button>hire me</button></li>
+                        <li className="navigation-item" ><Link to="/">Home</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link to="/projects">projects</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link to="/about">about</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link to="/resume">r&Eacute;sum&Eacute;</Link><span className="line"></span></li>
                     </ul>
                     <div className="hamburger" onClick={() => setShow(!show)}>
                         <svg className="hamburger-img" width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +36,7 @@ function Navbar() {
                         </svg>
                     </div>
                 </nav>
+                <Link to="hire-me" className='desktop'><button className='btn-desktop'>hire me <BsFillArrowRightCircleFill className='col' /></button></Link>
             </div>
         </header>
     )

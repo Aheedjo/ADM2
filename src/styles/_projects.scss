@@ -5,14 +5,15 @@
         @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5;
 
         .project {
-            @apply bg-accent shadow-sm rounded;
+            @apply shadow-sm rounded;
+            @apply bg-[url("../assets/repeating-triangles.svg")] bg-cover bg-no-repeat bg-center; 
 
             img {
                 @apply rounded-t
             }
             
             .info-cont {
-                @apply p-3 py-5 md:p-5;
+                @apply p-5;
     
                 .title {
                     @apply mb-1 text-lg;

@@ -1,27 +1,38 @@
-import programming from '../assets/programing.svg'
-import uiux from '../assets/ui-ux.svg'
-import app from '../assets/app-development.svg'
-import { BsMailbox } from "react-icons/bs";
-
+import { BsFillArrowRightCircleFill, BsBagFill, BsTwitter, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
+import { FaWhatsapp } from "react-icons/fa"
+import { ImFacebook2 } from "react-icons/im"
+import arrow from "../assets/arrow-down.svg"
 
 const Hero = () => {
   return (
-    <section className="hero">
-        <div className="container">
+    <section className="hero container">
+        <div className="cont">
             <div className="text">
                 <h1 className="hero-title">
-                    <span>hello I'm Ahidjo D.M,</span>
-                    <span>a frontend developer</span>
-                    <span>backend developer</span>
-                    <span>UI/UX designer</span>
+                    <span className='little'>Lorem ipsum dolor</span>
+                    <h1>Lorem ipsum amet, consectetur adipisicing.</h1>
                 </h1>
-                <button className="btn">Hire Me <BsMailbox /> </button>
+            </div>
+            <div className="btn-cont">
+                <button className="btn rev">Portfolio <BsBagFill /></button>
+                <button className="btn">Hire Me <BsFillArrowRightCircleFill /> </button>
+            </div>
+            <div className="social-links">
+                <a className="social-link" href="/"><FaWhatsapp className="icon-" /></a>
+                <a className="social-link" href="/"><BsTwitter className="icon-" /></a>
+                <a className="social-link" href="/"><ImFacebook2 className="icon-" /></a>
+                <a className="social-link" href="/"><BsInstagram className="icon-" /></a>
+                <a className="social-link" href="/"><BsLinkedin className="icon-" /></a>
+                <a className="social-link" href="/"><BsGithub className="icon-" /></a>
             </div>
             <div className="bg">
-                <img src={programming} alt="programming" className='programming' />
-                <img src={uiux} alt="uiux" className='uiux' />
-                <img src={app} alt="app" className='app' />
+                <span>Backend</span>
+                <span>Frontend</span>
+                <span>ui/ux</span>
             </div>
+        </div>
+        <div className="arrow">
+            <img src={arrow} alt="arrow" />
         </div>
     </section>
   )
