@@ -1,0 +1,9 @@
+.icon {
+    @apply w-12 h-12 rounded-md bg-primary mb-4;
+}
+
+.skills {
+    .skills-grid {
+        @apply grid md:grid-cols-3 gap-10 mt-10;
+    }
+}
