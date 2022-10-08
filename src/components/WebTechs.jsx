@@ -1,20 +1,6 @@
-import { webTechnologies } from '../data.js'
-import { FaHtml5 } from "react-icons/fa"
-import { FaSass } from "react-icons/fa"
-import { FaPython } from "react-icons/fa"
-import { FaAngular } from "react-icons/fa"
-import { FaReact } from "react-icons/fa"
-import { FaFigma } from "react-icons/fa"
-import { FaBootstrap } from "react-icons/fa"
-import { FaNodeJs } from "react-icons/fa"
-import { SiTailwindcss } from "react-icons/si"
-import { SiJira } from "react-icons/si"
-import { SiSvelte } from "react-icons/si"
-import { SiFlask } from "react-icons/si"
-import { SiExpress } from "react-icons/si"
-import { SiTypescript } from "react-icons/si"
-import { DiDjango } from "react-icons/di"
-import { DiGit } from "react-icons/di"
+import { FaHtml5, FaSass, FaPython, FaAngular, FaReact, FaFigma, FaBootstrap, FaNodeJs } from "react-icons/fa"
+import { SiTypescript, SiExpress, SiTailwindcss, SiFlask, SiJira, SiSvelte } from "react-icons/si"
+import { DiDjango, DiGit } from "react-icons/di"
 
 
 const WebTechs = () => {
@@ -24,7 +10,11 @@ const WebTechs = () => {
             <h2 className="title"><span className="line"></span>Web technologies</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae quaerat tempora unde, pariatur minima illo dicta aperiam officia sunt!</p>
         </>
-        <div className="web-techs-grid">
+        <div 
+            className="web-techs-grid"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+        >
             <div>
                 <FaHtml5 className='web-tech' />
                 <p>Html</p>

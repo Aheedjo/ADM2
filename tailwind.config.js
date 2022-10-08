@@ -12,7 +12,8 @@ module.exports = {
     colors: {
         primary: '#2B2B2B',
         secondary: '#F9F9F9',
-        accent: '#ffffff'
+        accent: '#ffffff',
+        paragraph: '#393E46'
     },
     },
     plugins: [],

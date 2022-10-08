@@ -7,8 +7,8 @@
         .testimonial {
             @apply min-w-full md:min-w-[500px];
 
-            .icon {
-                @apply mb-0;
+            .avatar {
+                @apply w-12 grayscale;
             }
 
             .user-info {

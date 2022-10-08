@@ -16,8 +16,8 @@ const Contact = () => {
     return (
         <section className="contact container">
                 <div className="left">
-                    <h2 className="title"><span className="line"></span>Contact me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae quaerat tempora unde, pariatur minima illo dicta aperiam officia sunt!</p>            
+                    <h2 className="title"><span className="line"></span>Get in touch</h2>
+                    <p>Fill in the form below to send me an email</p>            
                     <form onSubmit={handleSubmit((data) => {
                         console.log(data);
                     })}>
@@ -51,6 +51,7 @@ const Contact = () => {
                 </div>
                 <div className="right">
                     <h2 className="title"><span className="line"></span>Contact Information</h2>
+                    <p className="mb-3">Use any of the social media links of your choice below to contact me</p>            
                     <div className="one-liner">
                         <BsMailbox />
                         <p>admdevs@email.com</p>
@@ -60,12 +61,11 @@ const Contact = () => {
                         <p>+23481 2345 6789</p>
                     </div>
                     <div className="social-links">
-                        <a className="social-link" href="/"><FaWhatsapp className="icon-" /></a>
-                        <a className="social-link" href="/"><BsTwitter className="icon-" /></a>
-                        <a className="social-link" href="/"><ImFacebook2 className="icon-" /></a>
-                        <a className="social-link" href="/"><BsInstagram className="icon-" /></a>
-                        <a className="social-link" href="/"><BsLinkedin className="icon-" /></a>
-                        <a className="social-link" href="/"><BsGithub className="icon-" /></a>
+                        <a className="social-link" target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
+                        <a className="social-link" target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
+                        <a className="social-link" target="_blank" href="https://www.instagram.com/ahidjo.dm/" rel="noreferrer"><BsInstagram className="icon-" /></a>
+                        <a className="social-link" target="_blank" href="https://www.linkedin.com/in/maishanu-ahijo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className="icon-" /></a>
+                        <a className="social-link" target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className="icon-" /></a>
                     </div>
                 </div>
         </section>

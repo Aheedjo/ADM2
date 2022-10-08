@@ -8,7 +8,12 @@ const Services = () => {
                 {
                     skillss.map((skill, i) => {
                         return (
-                            <div key={i} className="skill">
+                            <div 
+                                className="skill"
+                                key={i} 
+                                data-aos="fade-right"
+                                data-aos-duration="1000"
+                            >
                                 <div className="icon"></div>
                                 <h3 className="title">{skill.title}</h3>
                                 <p className="info">{skill.info}</p>

@@ -1,0 +1,12 @@
+.faq {
+    @apply w-[90%] max-w-[600px] mx-auto mb-2;
+    .question {
+        @apply mb-3 border-b border-primary pb-3;
+        header {
+            @apply flex justify-between items-center mb-2;
+        }
+        .text {
+            @apply text-sm ;
+        }
+    }
+}
