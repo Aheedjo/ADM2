@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import logo from '../assets/logo.svg'
+import resume from "../assets/MaishanuResume.pdf"
 import { BsFillArrowRightCircleFill } from "react-icons/bs"
 import { Link } from "react-router-dom";
 
@@ -10,24 +11,25 @@ function Navbar() {
     return (
         <header className='nav'>
             <div className="container">
-                <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
                 <nav>
-                    <ul className={show ? "mobile navigation-mobile active" : "mobile navigation-mobile"}>
-                        <li className="navigation-item">
-                            <Link to="/">Home</Link>
-                            <span className="line"></span>
-                        </li>
-                        <li className="navigation-item"><Link to="/projects">projects</Link><span className="line"></span></li>
-                        <li className="navigation-item"><Link to="/about">about</Link><span className="line"></span></li>
-                        <li className="navigation-item"><Link to="/resume">r&Eacute;sum&Eacute;</Link><span className="line"></span></li>
-                        <Link to="hire-me"><button>hire me <BsFillArrowRightCircleFill className='col' /></button></Link>
-                    </ul>
+                    <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
                     <ul className="navigation-desktop">
-                        <li className="navigation-item" ><Link to="/">Home</Link><span className="line"></span></li>
-                        <li className="navigation-item"><Link to="/projects">projects</Link><span className="line"></span></li>
-                        <li className="navigation-item"><Link to="/about">about</Link><span className="line"></span></li>
-                        <li className="navigation-item"><Link to="/resume">r&Eacute;sum&Eacute;</Link><span className="line"></span></li>
+                        <li className="navigation-item" ><Link className='link' to="/">Home</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link className='link' to="/projects">projects</Link><span className="line"></span></li>
+                        <li className="navigation-item"><Link className='link' to="/about">about</Link><span className="line"></span></li>
                     </ul>
+                    <div className="mobile">
+                        <ul className={show ? "navigation-mobile active" : "navigation-mobile"}>
+                            <li className="navigation-item">
+                                <Link to="/">Home</Link>
+                                <span className="line"></span>
+                            </li>
+                            <li className="navigation-item"><Link to="/projects">projects</Link><span className="line"></span></li>
+                            <li className="navigation-item"><Link to="/about">about</Link><span className="line"></span></li>
+                            <li className="navigation-item"><a href={ resume } download="Maishanu's Resume">download r&Eacute;sum&Eacute;</a><span className="line"></span></li>
+                            <Link to="/contact-me"><button>Contact me <BsFillArrowRightCircleFill className='col' /></button></Link>
+                        </ul>
+                    </div>
                     <div className="hamburger" onClick={() => setShow(!show)}>
                         <svg className="hamburger-img" width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path className="bar center-bar" d="M29.3372 7.5H1.4978C1.13191 7.5 0.834961 7.68666 0.834961 7.91664V8.74993C0.834961 8.97992 1.13191 9.16657 1.4978 9.16657H29.3372C29.7031 9.16657 30 8.97992 30 8.74993V7.91664C30 7.68666 29.7031 7.5 29.3372 7.5Z" fill="black"/>
@@ -36,7 +38,10 @@ function Navbar() {
                         </svg>
                     </div>
                 </nav>
-                <Link to="hire-me" className='desktop'><button className='btn-desktop'>hire me <BsFillArrowRightCircleFill className='col' /></button></Link>
+                <div className='desktop'>
+                    <li className="navigation-item"><a href={ resume } download="Maishanu's Resume">Download r&Eacute;sum&Eacute;</a><span className="line"></span></li>
+                    <Link to="/contact-me"><button className='btn-desktop'>Contact me <BsFillArrowRightCircleFill className='col' /></button></Link>
+                </div>
             </div>
         </header>
     )

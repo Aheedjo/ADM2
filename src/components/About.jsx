@@ -8,7 +8,6 @@ const About = () => {
                 <p>Accumsan at augue mi at vitae in Accumsan at augue </p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae quaerat tempora unde, pariatur minima illo dicta aperiam officia sunt!</p>
                 <p>Veniam animi explicabo ducimus reprehenderit quasi perferendis voluptas blanditiis, voluptate debitis exercitationem magnam libero sequi. Nihil ut mollitia velit repellendus labore inventore?</p>
-                <p>Accumsan at augue mi at vitae in Accumsan at augue </p>
             </div>
         </section>
     )

@@ -1,10 +1,9 @@
 import Contact from '../components/Contact';
-import Skills from '../components/Skills';
+// import FAQ from '../components/FAQ';
 
 const HireMePage = () => {
   return (
     <>
-        <Skills />
         <Contact />
     </>
   )

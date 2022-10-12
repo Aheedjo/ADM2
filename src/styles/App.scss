@@ -1,7 +1,7 @@
-@import "./nav", "./hero", "./about", "./skills", "./webTechs", "./projects", "./testimonials", "./cta", "./contact", "./footer"; 
+@import "./nav", "./hero", "./about", "./skills", "./webTechs", "./projects", "./testimonials", "./cta", "./contact", "./footer", "./faq"; 
 
 body {
-    @apply overflow-x-hidden font-normal pt-20 md:pt-28;
+    @apply overflow-x-hidden font-normal pt-24 md:pt-28;
 }
 
 body::-webkit-scrollbar {
@@ -17,6 +17,10 @@ body::-webkit-scrollbar-thumb {
     @apply bg-primary;
 }
 
+p {
+    // @apply text-paragraph;
+}
+
 .App {
     text-align: left;
 }
@@ -30,8 +34,8 @@ section {
 }
 
 .btn {
-    @apply bg-primary text-secondary uppercase py-2 rounded-md transition-all border-t-primary w-[170px] md:w-[200px];
-    @apply border-solid border flex gap-4 items-center justify-center text-base;
+    @apply bg-primary text-secondary uppercase py-2 rounded-md transition-all border-t-primary w-[150px] sm:w-[170px] md:w-[200px];
+    @apply border-solid border flex gap-4 items-center justify-center text-sm md:text-base;
 
     &:hover {
         @apply bg-opacity-0 text-primary border-primary;

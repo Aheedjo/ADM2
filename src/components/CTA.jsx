@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
+
 const CTA = () => {
   return (
     <section className="cta container">
-        <h1 className="text">Lorem ipsum dolor sit amet consectetur elit. Minima, provident?</h1>        
-        <button className="btn">Contact me</button>
+        <div>
+            <h1 className="text">Have a project in mind?</h1>        
+            <h1 className="text">Have a Job for me?</h1>        
+        </div>
+        <Link to="/contact-me"><button className="btn">Contact me</button></Link>
     </section>
   )
 }
