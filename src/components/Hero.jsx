@@ -1,6 +1,5 @@
 import { BsFillArrowRightCircleFill, BsBagFill, BsTwitter, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs"
 import { FaWhatsapp } from "react-icons/fa"
-import { ImFacebook2 } from "react-icons/im"
 import arrow from "../assets/arrow-down.svg"
 
 const Hero = () => {
@@ -18,11 +17,11 @@ const Hero = () => {
                 <button className="btn">Hire Me <BsFillArrowRightCircleFill /> </button>
             </div>
             <div className="social-links">
-            <a className="social-link" target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
-                        <a className="social-link" target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
-                        <a className="social-link" target="_blank" href="https://www.instagram.com/ahidjo.dm/" rel="noreferrer"><BsInstagram className="icon-" /></a>
-                        <a className="social-link" target="_blank" href="https://www.linkedin.com/in/maishanu-ahijo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className="icon-" /></a>
-                        <a className="social-link" target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className="icon-" /></a>
+                <a className="social-link" target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
+                <a className="social-link" target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
+                <a className="social-link" target="_blank" href="https://www.instagram.com/ahidjo.dm/" rel="noreferrer"><BsInstagram className="icon-" /></a>
+                <a className="social-link" target="_blank" href="https://www.linkedin.com/in/maishanu-ahijo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className="icon-" /></a>
+                <a className="social-link" target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className="icon-" /></a>
             </div>
             <div className="bg">
                 <span>Backend</span>
