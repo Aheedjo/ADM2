@@ -1,6 +1,6 @@
-import { FaHtml5, FaSass, FaPython, FaAngular, FaReact, FaFigma, FaBootstrap, FaNodeJs } from "react-icons/fa"
-import { SiTypescript, SiExpress, SiTailwindcss, SiFlask, SiJira, SiSvelte } from "react-icons/si"
-import { DiDjango, DiGit } from "react-icons/di"
+import { FaHtml5, FaSass, FaPython, FaAngular, FaReact, FaFigma, FaNodeJs, FaGithub } from "react-icons/fa"
+import { SiTypescript, SiExpress, SiTailwindcss, SiFlask, SiJira, SiSvelte, SiMongodb, SiHeroku, SiVercel } from "react-icons/si"
+import { DiGit } from "react-icons/di"
 
 
 const WebTechs = () => {
@@ -8,13 +8,9 @@ const WebTechs = () => {
     <section className='web-techs container'>
         <>
             <h2 className="title"><span className="line"></span>Web technologies</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae quaerat tempora unde, pariatur minima illo dicta aperiam officia sunt!</p>
+            <p>Passionate full-stack developer & UI/UX designer, dedicated to creating seamless web experiences through frontend and backend expertise.</p>
         </>
-        <div 
-            className="web-techs-grid"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-        >
+        <div className="web-techs-grid">
             <div>
                 <FaHtml5 className='web-tech' />
                 <p>Html</p>
@@ -38,10 +34,6 @@ const WebTechs = () => {
             <div>
                 <FaFigma className='web-tech' />
                 <p>Figma</p>
-            </div>
-            <div>
-                <FaBootstrap className='web-tech' />
-                <p>Bootstrap</p>
             </div>
             <div>
                 <SiTypescript className='web-tech' />
@@ -68,16 +60,28 @@ const WebTechs = () => {
                 <p>Flask</p>
             </div>
             <div>
-                <DiDjango className='web-tech' />
-                <p>Django</p>
-            </div>
-            <div>
                 <DiGit className='web-tech' />
                 <p>Git</p>
             </div>
             <div>
+                <FaGithub className='web-tech' />
+                <p>GitHub</p>
+            </div>
+            <div>
                 <SiExpress className='web-tech' />
                 <p>Express</p>
+            </div>
+            <div>
+                <SiMongodb className='web-tech' />
+                <p>MongoDB</p>
+            </div>
+            <div>
+                <SiVercel className='web-tech' />
+                <p>Vercel</p>
+            </div>
+            <div>
+                <SiHeroku className='web-tech' />
+                <p>Heroku</p>
             </div>
         </div>
     </section>

@@ -21,7 +21,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className='container'>
+            <div className='container my-5'>
                 <h1 className='text-3xl text-center uppercase'>Contact Me</h1>
                 <p className='status-message text-center'>{statusMessage}</p>            
             </div>
@@ -111,18 +111,17 @@ const Contact = () => {
                         <p className="mb-3">Use any of the social media links of your choice below to contact me</p>            
                         <div className="one-liner">
                             <BsMailbox />
-                            <p>admdevs@email.com</p>
+                            <p>maishanu.ahijo@yahoo.com</p>
                         </div>
                         <div className="one-liner">
                             <BsTelephone />
-                            <p>+23481 2345 6789</p>
+                            <p>+23481 4341 0800</p>
                         </div>
                         <div className="social-links">
-                            <a className="social-link" target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
-                            <a className="social-link" target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
-                            <a className="social-link" target="_blank" href="https://www.instagram.com/ahidjo.dm/" rel="noreferrer"><BsInstagram className="icon-" /></a>
                             <a className="social-link" target="_blank" href="https://www.linkedin.com/in/maishanu-ahijo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className="icon-" /></a>
                             <a className="social-link" target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className="icon-" /></a>
+                            <a className="social-link" target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
+                            <a className="social-link" target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
                         </div>
                     </div>
             </section>

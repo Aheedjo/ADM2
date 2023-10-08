@@ -5,90 +5,51 @@
 }
 
 .nav {
-    @apply shadow-md bg-secondary fixed top-0 w-full z-50;
+    @apply shadow-sm bg-secondary fixed top-0 z-50 w-screen;
+    
     .container {
-        @apply flex items-center justify-between py-4 relative;
-
-        .desktop {
-            @apply hidden md:flex items-center gap-8;
-            li {
-                @apply list-none;
-            }
-            .btn-desktop {
-                @apply flex items-center gap-3; 
-            }
-        }
-
-        button {
-            @apply text-sm uppercase rounded-md py-3 md:py-2 px-5;                
-            @apply border-[1px] border-solid border-secondary md:border-primary bg-primary text-secondary transition-all;                
-            @apply flex items-center gap-3;
-        
-            &:hover {
-                @apply border-primary md:bg-opacity-0 text-primary;                
-            }
-        }
-        
-        .navigation-item {
-            @apply uppercase relative text-sm w-max mx-auto;
-            
-            .line {
-                @apply absolute left-0 bottom-[-8px] h-[1.5px] w-full opacity-0 bg-secondary md:bg-primary transition-all;
-            }
-            
-            &:hover {
-                .line {
-                    @apply bottom-[-5px] opacity-100;
-                }
-            }
-            
-            .active {
-                @apply bottom-[-5px] opacity-100;
-            }
-        }
+        @apply flex items-center py-4 relative w-[90%] mx-auto;
 
         nav {
-            @apply flex gap-10 md:justify-start justify-between items-center w-full md:w-max;
-            .navigation-mobile {
-                @apply hidden flex-col gap-10 z-50;
-                @apply absolute text-secondary bg-[#2B2B2B] py-8 px-5 left-0 bottom-0 w-full translate-y-[98%] opacity-0 rounded-md transition-all ease-in-out shadow-md;
-                button {
-                    @apply w-full text-center justify-center;
-                    &:hover {
-                        @apply border-secondary text-secondary;                
-                    }
-                }
+            @apply flex flex-col sm:flex-row justify-center items-center gap-3 w-full;
+            @media screen and (min-width: 550px) {
+                @apply flex-row justify-between;
             }
-            
-            .navigation-desktop {
-                @apply hidden md:flex flex-row items-center gap-8;
-                @apply text-[#2B2B2B] ease-in-out;            
-            }
-            
-            .active {
-                @apply translate-y-[105%] md:translate-y-[0] opacity-100 flex md:hidden;
-            }
-    
-            .hamburger {
-                @apply block md:hidden;
-    
-                .hamburger-img {
-                    @apply cursor-pointer;
-    
-                    path {
-                        @apply transition-all;
-                    }
-    
-                    &:hover {
-                        .top-bar {
-                            @apply translate-x-[-11px]
-                        }
-                        .bottom-bar {
-                            @apply translate-x-[11px]
-                        }
-                    }
-                }
+
+            >div {
+                @apply flex gap-5 items-center
             }
         }
     }
 }
+
+.navigation-item {
+    @apply uppercase relative text-sm w-max;
+    
+    .line {
+        @apply absolute left-0 bottom-[-8px] h-[1.5px] w-full opacity-0 bg-secondary md:bg-primary transition-all;
+    }
+    
+    &:hover {
+        .line {
+            @apply bottom-[-5px] opacity-100;
+        }
+    }
+    
+    .active {
+        @apply bottom-[-5px] opacity-100;
+    }
+
+    a {
+        @apply whitespace-nowrap;
+    }
+}
+    button {
+        @apply text-xs sm:text-sm uppercase rounded-md py-2 px-5;                
+        @apply border-[1px] border-solid border-secondary md:border-primary bg-primary text-secondary transition-all;                
+        @apply flex items-center gap-2;
+    
+        &:hover {
+            @apply border-primary bg-opacity-0 text-primary;                
+        }
+    }

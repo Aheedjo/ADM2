@@ -1,13 +1,17 @@
+import image from '../assets/image.jpg'
+
 const About = () => {
     return (
         <section className="about container">
-            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+            <div className='image'>
+                <img src={image} alt="profile-image" />
+            </div>
             <div className="text">
                 <h2 className="title"><span className="line"></span>About Me</h2>
-                <h1>Lorem ipsum dolor sit amet adipisicing consequuntur.</h1>
-                <p>Accumsan at augue mi at vitae in Accumsan at augue </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita vitae quaerat tempora unde, pariatur minima illo dicta aperiam officia sunt!</p>
-                <p>Veniam animi explicabo ducimus reprehenderit quasi perferendis voluptas blanditiis, voluptate debitis exercitationem magnam libero sequi. Nihil ut mollitia velit repellendus labore inventore?</p>
+                <h1>In the Pixels and Beyond.</h1>
+                <p>I began my coding journey during the challenging times of the COVID-19 pandemic. Starting with Python, I gradually ventured into web development, initially exploring Flask. However, I soon realized the significance of frontend skills and took on the challenge of mastering HTML, CSS, and JavaScript. To refine my abilities, I immersed myself in challenging projects on Frontend Mentor.</p>
+                <p>In 2022, fate took an unexpected turn when a friend offered me an opportunity in the realm of UI/UX design. Despite having no prior experience in this domain, I enthusiastically accepted the offer and quickly adapted to the role. Known for my ability to learn fast, I completed the design work after six months of dedicated effort.</p>
+                <p>I transitioned to the development team, learning on the job and picking up technologies like Angular. Today, I'm a mid-level software developer. Beyond web development, I'm venturing into game development with Unreal Engine 5 and exploring machine learning with a friend.</p>
             </div>
         </section>
     )

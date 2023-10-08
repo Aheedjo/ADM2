@@ -2,29 +2,7 @@
     @apply bg-primary text-secondary;
 
     .container {
-        @apply flex flex-col md:flex-row gap-10 justify-between items-center py-6;
-
-        .navigation-desktop {
-            @apply flex gap-7;
-        } 
-
-        .navigation-item {
-            @apply uppercase relative text-sm w-max mx-auto;
-            
-            a {
-                @apply text-secondary; 
-            }
-
-            .line {
-                @apply absolute left-0 bottom-[-8px] h-[1.5px] w-full opacity-0 bg-secondary transition-all;
-            }
-            
-            &:hover {
-                .line {
-                    @apply bottom-[-5px] opacity-100;
-                }
-            }
-        }
+        @apply flex sm:flex-row gap-10 justify-between items-center py-6;
 
         .copyright {
             @apply text-sm;

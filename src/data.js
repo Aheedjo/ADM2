@@ -1,18 +1,22 @@
+import webDesign from "./assets/web-design.png"
+import server from "./assets/server.png"
+import design from "./assets/design.png"
+
 export const skillss = [
     {
-        icon: "1",
+        icon: webDesign,
         title: "Front-end Developement",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias impedit veniam odio neque reiciendis."
+        info: "Crafting intuitive user interfaces with HTML, CSS, and JavaScript for seamless user experiences."
     },
     {
-        icon: "1",
+        icon: design,
         title: "UI/UX Design",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias impedit veniam odio neque reiciendis."
+        info: "Creating visually stunning designs and intuitive user flows for delightful user interactions."
     },
     {
-        icon: "1",
+        icon: server,
         title: "Back-end Developement",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias impedit veniam odio neque reiciendis."
+        info: "Building robust server-side applications, handling data, and ensuring secure functionality."
     },
 ];
 
@@ -84,41 +88,7 @@ export const projects = [
         text: "Use our built in analytics dashboard  to find valuable insights and monitor the value of your crypto portfolio over time",
         image: "",
     },
-] 
-
-export const testimonials = [
-    {
-        name: "Joyle Carter",
-        image: "",
-        header: "What a great company",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend mus at nunc, vestibulum accumsan, tellus. Odio duis viverra nullam tempus eget porttitor sed. Nunc morbi ac velit, urna",
-    },
-    {
-        name: "Joyle Carter",
-        image: "",
-        header: "What a great company",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend mus at nunc, vestibulum accumsan, tellus. Odio duis viverra nullam tempus eget porttitor sed. Nunc morbi ac velit, urna",
-    },
-    {
-        name: "Joyle Carter",
-        image: "",
-        header: "What a great company",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend mus at nunc, vestibulum accumsan, tellus. Odio duis viverra nullam tempus eget porttitor sed. Nunc morbi ac velit, urna",
-    },
-    {
-        name: "Joyle Carter",
-        image: "",
-        header: "What a great company",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend mus at nunc, vestibulum accumsan, tellus. Odio duis viverra nullam tempus eget porttitor sed. Nunc morbi ac velit, urna",
-    },
-    {
-        name: "Joyle Carter",
-        image: "",
-        header: "What a great company",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend mus at nunc, vestibulum accumsan, tellus. Odio duis viverra nullam tempus eget porttitor sed. Nunc morbi ac velit, urna",
-    },
-] 
-
+]
 
 export const questions = [
     {

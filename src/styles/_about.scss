@@ -1,12 +1,18 @@
 .about {
-    @apply flex flex-col lg:flex-row items-center gap-10 md:gap-16;
+    @apply grid lg:grid-cols-2 items-start gap-10 md:gap-16;
 
     h1 {
         @apply text-2xl md:text-3xl mb-2;
     }
-    img {
-        @apply w-full h-full;
+
+    .image {
+        @apply max-w-xl mx-auto;
+        
+        img {
+            @apply w-full h-full;
+        }
     }
+
     p {
         @apply mt-3;
     }
