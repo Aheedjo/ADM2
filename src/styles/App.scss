@@ -6,7 +6,6 @@ body {
 
 body::-webkit-scrollbar {
     width: 7px;
-    // border-radius: 2px;
 }
 
 body::-webkit-scrollbar-track {
@@ -15,10 +14,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     @apply bg-primary;
-}
-
-p {
-    // @apply text-paragraph;
 }
 
 .App {
@@ -44,10 +39,6 @@ section {
 
 .hero .container .text .btn {
     @apply px-20 md:px-32 max-w-xs;
-}
-
-header {
-    // @apply bg-[url("../assets/repeating-triangles.svg")] bg-cover bg-no-repeat bg-center; 
 }
 
 .title {
