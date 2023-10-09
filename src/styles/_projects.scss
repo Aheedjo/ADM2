@@ -9,22 +9,41 @@
             @apply bg-[url("../assets/repeating-triangles.svg")] bg-cover bg-no-repeat bg-center; 
 
             img {
-                @apply rounded-t
+                @apply rounded-t h-40 w-full object-cover;
             }
             
             .info-cont {
                 @apply p-5;
-    
-                .title {
-                    @apply mb-1 text-lg;
+
+                .info {
+                    > div {
+                        @apply px-2 pb-[2px] bg-primary w-max mb-3;
+
+                        .tag {
+                            @apply text-xs uppercase text-secondary;
+                        }
+                    }
+
+                    .title {
+                        @apply mb-1 text-lg;
+                    }
+        
+                    .text {
+                        @apply text-sm;
+                    }
                 }
     
-                .text {
-                    @apply text-sm;
+
+                .techs {
+                    @apply flex items-center gap-2 mt-4 flex-wrap;
+
+                    .tech {
+                        @apply px-2 py-1 bg-primary bg-opacity-5 text-paragraph text-xs;
+                    }
                 }
     
                 .btn-cont {
-                    @apply flex gap-3 mt-8;
+                    @apply flex gap-3 mt-6;
     
                     a {
                         @apply text-xs border-solid border-primary border-[1px] p-3 py-1 rounded-sm w-28 text-center transition-all;

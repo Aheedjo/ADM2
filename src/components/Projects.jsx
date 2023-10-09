@@ -1,13 +1,7 @@
-import { useEffect } from "react";
 import { projects } from "../data"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { GiWorld } from "react-icons/gi"
 
-const Projects = () => {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-        
+const Projects = () => {        
     return (
         <section className="projects container">
             <h2 className="title"><span className="line"></span>Projects</h2>
@@ -15,17 +9,47 @@ const Projects = () => {
                 {
                     projects.map((project, i) => {
                         return (
-                            <article key={i} className='project'>
-                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="" />               
+                            <article key={ i } className='project'>
+                                {
+                                    project.tag == 'Front-end' ? (
+                                        <img src={ project.image } alt="project-image" />
+                                    ) : null
+                                }
                                 <div className="info-cont">
                                     <div className="info">
-                                        <div className="icon"></div>
-                                        <h4 className="title">{project.title}</h4>
-                                        <div className="text">{project.text}</div>
+                                        <div>
+                                            <span className="tag">{ project.tag }</span>
+                                        </div>
+                                        <h4 className="title">{ project.title }</h4>
+                                        <p className="text">{ project.text }</p>
+                                    </div>
+                                    <div className="techs">
+                                        {
+                                            project.techs.map((tech, i) => {
+                                                return (
+                                                    <div key={i}>
+                                                        <p className="tech">{ tech }</p>
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                     </div>
                                     <div className="btn-cont">
-                                        <a href='/'>View Code</a>
-                                        <a href='/'>Visit Site</a>
+                                        {
+                                            project.tag == 'Front-end' || project.tag == 'Back-end  ||  API' ? (
+                                                <a href={ project.codeLink } target="_blank">View Code</a>
+                                            ) : null
+                                        }
+                                        {
+                                            project.tag == 'UI/UX' ? (
+                                                <a href={ project.liveLink } target="_blank">View Design</a>
+                                            ) : null
+                                        }
+                                        {
+                                            project.tag == 'Front-end' ? (
+                                                <a href={ project.liveLink } target="_blank">Visit Site</a>
+                                            ) : null
+                                        }
                                     </div>
                                 </div>
                             </article>

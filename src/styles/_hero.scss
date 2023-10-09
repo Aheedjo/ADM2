@@ -54,8 +54,9 @@
 
 @keyframes moveArrow {
     from {
-        transform: translateY(110%) translateX(60%) scale(1.2);
+        transform: translateY(80%) translateX(60%) scale(1.2);
     }
+    
     to {
         transform: translateY(0) translateX(60%) scale(1.2);
     }
