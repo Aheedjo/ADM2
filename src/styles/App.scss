@@ -1,4 +1,5 @@
-@import "./nav", "./hero", "./about", "./skills", "./webTechs", "./projects", "./testimonials", "./cta", "./contact", "./footer", "./faq"; 
+@import "./_nav", "./_hero", "./_about", "./_skills", "./_webTechs", "./_projects", "./_testimonials", "./_cta", "./_contact", "./_footer", "./_faq"; 
+// @import "./_nav";
 
 body {
     @apply overflow-x-hidden font-normal pt-24 md:pt-28;
