@@ -1,5 +1,6 @@
+// @import "./nav", "./hero", "./about", "./skills", "./webTechs", "./projects", "./testimonials", "./cta", "./contact", "./footer", "./faq"; 
+@import "../styles/nav"; 
 
-@import "./nav"; 
 body {
     @apply overflow-x-hidden font-normal pt-24 md:pt-28;
 }
